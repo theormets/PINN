@@ -52,15 +52,6 @@ L_total = L_pde + α * L_ic + λ * L_reg
 
 Here, `α = 2.0` emphasizes the importance of the initial condition early in training, and `λ = 1e-6` applies light regularization.
 
-## 📊 Visualizations
-
-The notebook includes several visual tools to understand the model’s predictions. It shows the full 2D evolution of the field `u(x, y, t)`, the interface profile along a horizontal slice at `y = 0`, and the motion of the φ = 0.5 level set over time to track interface changes.
-
-## 🚀 Run on Google Colab
-
-You can open and run the notebook in your browser with no installation:
-
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/<your-username>/<your-repo>/blob/main/<your-notebook>.ipynb)
 
 ## 🧑‍🎓 Who is this for?
 
