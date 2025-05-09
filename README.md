@@ -1,7 +1,11 @@
-This repository features a beginner-friendly implementation of a Physics-Informed Neural Network (PINN) designed to solve the Allen–Cahn equation in two spatial dimensions using TensorFlow. The Allen–Cahn equation is a fundamental partial differential equation used to model interface dynamics and phase separation processes in materials and physics.
+# 🧠 Physics-Informed Neural Network for the Allen–Cahn Equation (2D) of Phase-field Modelling
 
-Instead of relying on labeled data, this PINN approach learns by satisfying the governing physical law directly. The solution begins from a disc-shaped initial condition and evolves over time, with the model using automatic differentiation to compute the required derivatives of the solution.
+This repository provides a beginner-friendly implementation of a Physics-Informed Neural Network (PINN) for solving the Allen–Cahn equation in two spatial dimensions, using TensorFlow.
 
-The notebook includes visualizations that bring clarity to the results. It shows how the full 2D profile changes over time, how the solution evolves along a single 1D slice, and how the φ = 0.5 contour — representing the interface — moves and deforms. These views help develop an intuitive understanding of how the Allen–Cahn equation drives interface behavior.
+The Allen–Cahn equation is a foundational model in **phase-field modeling**, widely used to describe the evolution of interfaces in systems with a **non-conserved order parameter**. It captures how phase boundaries move and shrink over time due to interfacial energy, making it especially relevant in materials science, image processing, and pattern formation studies.
 
-This project is well-suited for those curious about applying deep learning to physics problems, particularly using neural networks to model PDE-driven dynamics.
+Unlike traditional numerical solvers, this approach uses a neural network trained to satisfy the underlying partial differential equation directly, without requiring labeled data. The initial condition is defined as a smooth disc-like profile, and the model evolves it through time while respecting the physics embedded in the Allen–Cahn dynamics.
+
+To help visualize what the network learns, the notebook includes views of the full 2D field, time evolution along a fixed 1D slice, and the motion of the φ = 0.5 contour, which represents the interface position. These tools help develop intuition about interface dynamics in phase-field systems.
+
+The code is well-suited for those beginning their exploration of physics-informed machine learning, as well as researchers curious about using neural networks for modeling phase-field phenomena.
